@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/editTexReceiver"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/imageButtonReceiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:progress="60"
+        android:max="60"/>
+
+   <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <ImageButton
+	        android:id="@+id/imageButtonSend"
+	        android:layout_width="38dp"
+	        android:layout_height="match_parent"
+	        android:src="@android:drawable/ic_dialog_email" />
+
+	    <ProgressBar
+	        android:id="@+id/progressBar1"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.18" />
+
+	    <ImageButton
+	        android:id="@+id/imageButtonCancle"
+	        android:layout_width="34dp"
+	        android:layout_height="29dp"
+	        android:src="@android:drawable/btn_dialog" />
+
+	</LinearLayout>
+
+</LinearLayout>
